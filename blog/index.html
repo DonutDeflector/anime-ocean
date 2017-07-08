@@ -1,0 +1,44 @@
+---
+layout: default
+categories: blog
+---
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Dev Blog</h1>
+        <p class="splash-subhead">
+            The Development blog of Anime Ocean.
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="content">
+  <div class="pure-g">
+    <div class="l-box pure-u-1 pure-u-lg-2-3">
+      {% for post in site.posts limit:1 %}
+      <article class="post">
+        <h2 class="content-head is-center"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="entry">
+          {{ post.content }}
+        </div>
+        <hr>
+        <p>Written: {{post.date | date: "%B %e, %Y"}}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="l-box pure-u-1 pure-u-lg-1-3">
+      <h3 class="content-head is-center">Archive</h3>
+      <ul>
+        {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a> - {{post.date | date: "%B %e, %Y"}}
+        </li>
+        {% endfor %}
+      </ul>
+  </div>
+</div>
+</div>
+</div>
+</main>
