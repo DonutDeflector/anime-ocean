@@ -1,5 +1,7 @@
-Pure CSS Layout Examples
+Anime Ocean Landing Page
 ========================
+
+The Anime Ocean Landing Page, modified and decrapified from a template.
 
 Layout examples using [Pure CSS][pure] compiled from the [pure-site][] project.
 
