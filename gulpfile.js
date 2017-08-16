@@ -7,7 +7,7 @@ var mozjpeg  = require('imagemin-mozjpeg');
 
 gulp.task('concat', function() {
     gulp.src(['src/assets/css/*.css'])
-      .pipe(shell(['cat src/assets/css/*.css > src/assets/css/dev/main.min.css']));
+      .pipe(shell(['cat src/assets/css/*.css > src/assets/css/dev/style.min.css']));
 });
 
 gulp.task('css', function() {
